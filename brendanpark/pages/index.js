@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import { Picture } from 'next-img'
+import background from './images/background.jpg'
 
 export default function Home() {
   return (
@@ -7,11 +9,12 @@ export default function Home() {
         <title>Brendan Park</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <main>
         <h1 className="title">
           brendanpark<a href="https://soundcloud.com/flaudiolab">sound</a><a href="https://www.youtube.com/channel/UCATH813AjPo_VLungWByWgg">video</a><a href="https://www.instagram.com/brendan_park93/">photos</a>
         </h1>
+          <Picture src={background}/>
       </main>
 
       <footer>
@@ -35,6 +38,10 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          height: 100%,
+          background-position: center,
+          background-repeat: no-repeat,
+          background-size: cover
         }
 
         footer {
