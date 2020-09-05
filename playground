@@ -1,0 +1,18 @@
+ <body>
+<div class="bg-img"></div>
+<canvas style="touch-action: none; cursor: inherit; display: block;">
+</canvas>
+</body>
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.wallpaperscraft.com/image/field_sunset_grass_129566_1920x1080.jpg') center center no-repeat;
+  background-size: cover;
+}
