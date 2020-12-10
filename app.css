@@ -1,7 +1,10 @@
-
+@font-face {
+  font-family: 'modern-sans';
+  src: url('/fonts/ModernSans-Light.otf');
+ }
 
 body {
-  font-family: Karla,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: modern-sans,Karla,Helvetica Neue,Helvetica,Arial,sans-serif;
   line-height: 1.2;
   margin: 0;
   padding: 0;
