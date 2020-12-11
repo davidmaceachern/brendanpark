@@ -1,5 +1,5 @@
-
 /* Background Image Styles */
+
 .bgWrap {
   position: fixed;
   height: 100vh;
@@ -7,36 +7,31 @@
   overflow: hidden;
   z-index: -1;
 }
-/* Header Styles
-Title   Navitem1 Navitem2
+
+/* Header
+
+Description: It's a grid, Nav items are a float.
+
+HeaderContainer {
+Row1 {Title{TitleLink} <-----> Nav{Items{Item{Link}}}
+}
+} 
 */
-.siteHeader {
-  position: relative;
-  padding: 5.28rem 11.04rem 0;
+.headerContainer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   z-index: 1;
-  border: 0;
-  line-height: 1.2;
-  margin: 0;
-  box-sizing: border-box;
 }
 
-.headerWrapper {
-  box-sizing: border-box;
-  display: block;
-  float: none;
-  line-height: 28.8px;
-  position: relative;
-  z-index: auto;
-}
-
-.title {
-  color: #fff;
-  text-align: left;
-  font-weight: 400;
+/* Title */
+.title { 
+  grid-area: 1 / 2 / 2 / 4; 
+  align-self: center;
   font-size: 2.4rem;
-  letter-spacing: 1.8px;
-  line-height: 5;
-  position: absolute;
+  font-weight: 400;
 }
 
 .titleLink {
@@ -44,15 +39,10 @@ Title   Navitem1 Navitem2
   letter-spacing: 1.8px;
 }
 
-.headerNav {
-  max-width: 70%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  display: block;
-  float: none;
-  line-height: 28.8px;
-  position: static;
-  z-index: auto;
+/* Nav */
+.nav { 
+  grid-area: 1 / 5 / 2 / 9;
+  align-self: center;
 }
 
 .navItems {
@@ -66,8 +56,7 @@ Title   Navitem1 Navitem2
   display: list-item;
   float: none;
   line-height: 120px;
-  position: static;
-  z-index: auto;
+  /* position: static; */
   font-weight: 400;
   font-size: 2.4rem;
   text-align: center;
@@ -79,5 +68,84 @@ Title   Navitem1 Navitem2
   display: block;
   font-size: 2.4rem;
   letter-spacing: 1.8px;
+} 
+
+/* 
+.headerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  z-index: 1;
+} */
+
+/* .title {
+  grid-column: 2;
+  align-self: center;
 }
+
+.nav {
+  grid-column: 3 5;
+  align-self: center;
+} */
+
+  
+  
+/* .siteHeader {
+  grid-template-columns: 6fr 2fr 3fr;
+  align-items: center;
+  z-index: 1;
+  border: 0;
+  line-height: 1.2;
+}
+
+.title {
+  color: #fff;
+  text-align: left;
+  font-weight: 400;
+  font-size: 2.4rem;
+  letter-spacing: 1.8px; */
+  /* line-height: 5; */
+  /* position: absolute;
+}
+
+.titleLink {
+  font-size: 2.4rem;
+  letter-spacing: 1.8px;
+} */
+
+/* .nav {
+  max-width: 70%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 28.8px;
+  position: static;
+  z-index: auto;
+} */
+
+/* .navItems {
+  display: flex;
+  flex-flow: row nowrap; 
+  list-style-type: none;
+  justify-content: center;
+}
+
+.navItem {
+  display: list-item;
+  float: none;
+  /* line-height: 120px; */
+  /* position: static;
+  z-index: auto;
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+} */
+
+/* .navLink {
+  display: block;
+  font-size: 2.4rem;
+  letter-spacing: 1.8px;
+} */ 
 
