@@ -7,7 +7,7 @@ const Index = () => (
     <div className={styles.bgWrap}>
       <Head>
         <title>Brendan Park</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.png" />
       </Head>
       <Image
         alt="Frost covered field"
@@ -40,5 +40,5 @@ const Index = () => (
 
 export default Index
 // TODO
-// css align title with navbar 
+// Anything less than 1300 x 894 and the menu changes, add media query for this. 
 // react three fiber effect 
