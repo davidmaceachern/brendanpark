@@ -24,13 +24,16 @@ const Index = () => (
         <div className={styles.nav}>
           <ul className={styles.navItems}>
             <li className={styles.navItem}>
-              <a className={styles.navLink} href="https://soundcloud.com/flaudiolab">Sound</a>
+              <a className={styles.navLink} href="https://brendanpark.bandcamp.com/releases">Releases</a>
             </li>
             <li className={styles.navItem}>
-              <a className={styles.navLink} href="https://www.youtube.com/channel/UCATH813AjPo_VLungWByWgg">Video</a>
+              <a className={styles.navLink} href="https://www.youtube.com/channel/UCATH813AjPo_VLungWByWgg">Mixtapes</a>
             </li>
             <li className={styles.navItem}>
-              <a className={styles.navLink} href="https://www.instagram.com/brendan_park93/">Photo</a>
+              <a className={styles.navLink} href="https://www.instagram.com/brendan_park93/">Photos</a>
+            </li>
+            <li className={styles.navItem}>
+              <a className={styles.navLink} href="https://brendanpark.bandcamp.com/contact?b=263237925&n=Brendan%20Park">Contact</a>
             </li>
           </ul>
         </div>
